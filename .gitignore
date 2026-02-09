@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+
+# Virtual Environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# SLURM & HPC
+*.out
+*.err
+slurm-*.out
+*.log
+*.sbatch.out
+
+# Data and Models (usually too large - use Git LFS if needed)
+*.h5
+*.pkl
+*.pth
+*.bin
+*.onnx
+*.safetensors
+models/
+checkpoints/
+*.tar.gz
+*.zip
+
+# FAISS Indices
+*.faiss
+*.index
+
+# Environment & Secrets
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# PyTorch
+*.pt
+lightning_logs/
+
+# Weights & Biases
+wandb/
+
+# Cache
+.cache/
+*.cache
+
+# OS
+Thumbs.db
+.DS_Store
+docs/
