@@ -122,7 +122,7 @@ semantic-search/
 
 ### Running the Notebook
 
-#### On a SLURM GPU cluster
+#### On a SLURM GPU cluster (recommended)
 
 1. Run the setup script (starts Jupyter on a GPU node automatically):
 
@@ -155,7 +155,7 @@ jupyter notebook
 
 1. **Data Loading**: The system loads 41,000 machine learning research papers from a JSON file containing titles, summaries, and metadata.
 
-2. **Encoding**: The MPNet sentence-transformer model converts each paper's summary into a 768-dimensional dense vector embedding that captures semantic meaning.
+2. **Encoding**: The `MPNet` sentence-transformer model converts each paper's summary into a 768-dimensional dense vector embedding that captures semantic meaning.
 
 3. **Indexing**: Faiss creates a GPU-accelerated index structure using L2 distance metrics for fast similarity search across all embeddings.
 
@@ -170,9 +170,9 @@ jupyter notebook
 
 - **Model**: `all-mpnet-base-v2`
 - **Embedding Dimension**: 768
-- **Max Sequence Length**: 128 tokens
+- **Max Sequence Length**: 384 tokens
 - **Pooling Strategy**: Mean tokens
-- **Note**: This model is deprecated. For production use, check [Hugging Face sentence-transformers](https://huggingface.co/sentence-transformers/models) for updated models.
+
 
 ## Performance
 
